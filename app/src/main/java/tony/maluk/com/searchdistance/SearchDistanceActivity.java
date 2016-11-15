@@ -19,6 +19,8 @@ public class SearchDistanceActivity extends AppCompatActivity implements View.On
     Button btnCalc;
     EditText edtStart;
     EditText edtEnd;
+    Integer x;
+    Integer y;
 
     static int[] arr = {0, 23, 10, 14, 5, 9, 7};
 
@@ -42,8 +44,8 @@ public class SearchDistanceActivity extends AppCompatActivity implements View.On
     }
 
     public static int path(String c, String d){
-        Integer x = Integer.valueOf(c);
-        Integer y = Integer.valueOf(d);
+        x.valueOf(c);
+        y.valueOf(d);
         int distance = 0;
         for(int i = x + 1; i < y + 1; i++){
             distance = distance + arr[i];
